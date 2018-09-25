@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <noscript>
+        <div class="alert alert-danger" role="alert">
+            You need to enable JavaScript to run this app.
+        </div>
+    </noscript>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110615190-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'XX===== YOUR CODE HERE ======XX');
+    </script>
+    -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- INFO -->
+  <title>Rastreio Brasil - O ratreador que todo veículo deveria ter</title>
+  <meta name="description" content="O ratreador que todo veículo deveria ter" />
+  <meta name="keywords" content="rastreador brasil, reastrador veicular, rastreador" />
+
+  <!-- Recommended favicon format -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Apple Touch Icon (at least 200x200px) -->
+  <link rel="apple-touch-icon" href="tile.png">
+
+  <!-- To run web application in full-screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-config" content="browserconfig.xml" />
+
+  <!-- SOCIAL -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://rastreiobrasil.com.br">
+  <meta property="og:title" content="Rastreio Brasil">
+  <meta property="og:image" content="tile-wide.png">
+  <meta property="og:description" content="O ratreador que todo veículo deveria ter">
+  <meta property="og:site_name" content="Rastreio Brasil">
+  <meta property="og:locale" content="en_US">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/js/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/js/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendor/css/animate.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body class="wow fadeIn home">
+  <header class="header fixed-top">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+      </div>
+
+      <div class="phone d-none d-sm-block">
+        <a href="tel:08004567000">0800 456 7000</a>
+      </div>
+
+      <div class="search d-none d-sm-block">
+        <a href="javascript:void(0)" onclick="searchOpen()"><img src="assets/img/search.png" alt=""></a>
+      </div>
+
+      <!-- menu -->
+      <div class="hamburger">
+        <a href="javascript:void(0)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- /menu -->
+    </div>
+  </header>
+  <!-- /Header -->
+
+  <!-- dropdown menu -->
+  <section class="dropdown-section d-none wow fadeIn">
+    <div class="container">
+      <div class="dropdown">
+        <div class="dropdown-title">
+          <a href="javascript:void(0)">Quero um rastreador para <i class="fa fa-angle-down"></i></a>
+        </div>
+        <ul class="d-none">
+          <li><a href="#"><img src="assets/img/icon-carro.png" alt="">Carro</a></li>
+          <li><a href="#"><img src="assets/img/icon-moto.png" alt="">Moto</a></li>
+          <li><a href="#"><img src="assets/img/icon-veiculos.png" alt="">Veículos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- dropdown menu -->
+
+  <main>
+
+    <!-- busca -->
+    <div id="busca" class="busca modal-full modal-full-hide">
+      <div class="busca modal-full-close">
+        <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="modal-full-body">
+        <form action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="O que você procura?" class="search-text">
+          <input type="image" src="assets/img/search.png" alt="Submit" class="search-btn">
+        </form>
+      </div>
+    </div>
+    <!-- /busca -->
+
+    <!-- fale conosco -->
+    <div id="fale-conosco" class="fale-conosco modal-full modal-full-hide">
+      <div class="fale-conosco modal-full-close">
+        <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="modal-full-body">
+        <h2>Como podemos ajudá-lo?</h2>
+        <p>Deixa uma mensagem com suas dúvidas</p>
+        <form class="fale-conosco-form" action="index.html" method="post">
+          <input type="nome" name="" value="" placeholder="Nome">
+          <input type="email" name="" value="" placeholder="E-mail">
+          <select class="assunto" name="">
+            <option value="valor"> Clique para escolher um assunto </option>
+            <option value="valor"> Carros</option>
+            <option value="valor"> Motos</option>
+            <option value="valor"> Veículos</option>
+          </select>
+          <textarea name="name" placeholder="Texto"></textarea>
+          <button type="button" name="button" class="btn-primario">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <!-- /fale conosco -->
+
+    <!-- menu -->
+    <div class="menu--overlay modal-full modal-full-hide">
+      <div class="modal-full-close">
+        <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="modal-full-body">
+        <div class="card-grid">
+          <div class="card-grid-item">
+            <a href="#">
+              <img src="assets/img/icon-carro.png" alt="foto">
+              <p>Rastrador para <span>carros</span></p>
+            </a>
+          </div>
+          <div class="card-grid-item">
+            <a href="#">
+              <img src="assets/img/icon-moto.png" alt="foto">
+              <p>Rastrador para <span>motos</span></p>
+            </a>
+          </div>
+          <div class="card-grid-item">
+            <a href="#">
+              <img src="assets/img/icon-veiculos.png" alt="foto">
+              <p>Rastrador para <span>meus veículos</span></p>
+            </a>
+          </div>
+        </div>
+
+        <!-- submenu -->
+        <div class="menu--overlay-submenu row">
+          <div class="col">
+            <a href="#">Sobre nós</a>
+            <a href="#">Planos</a>
+            <a href="#">Como funciona</a>
+            <a href="#">Blog</a>
+            <a href="#" class="btn btn-primario">Login</a>
+          </div>
+        </div>
+        <!-- /submenu -->
+        <div class="menu--overlay-social row">
+          <div class="col">
+            <a href="#"><img src="assets/img/social-facebook.png" alt="facebook" class="social"></a>
+            <a href="#"><img src="assets/img/social-twitter.png" alt="twitter" class="social"></a>
+            <a href="#"><img src="assets/img/social-google.png" alt="google plus" class="social"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- /menu -->
+
+
+    <section class="hero container-fluid">
+      <div class="hero-inner container">
+        <div class="hero-text row align-items-center">
+          <div class="col-md-12 col-lg-7">
+            <div class="chapeu wow fadeIn" data-wow-delay="0.4s">Chegamos para ficar!</div>
+            <div class="chamada wow fadeIn" data-wow-delay="0.8s">O Rastreador que todo veículo deveria ter.</div>
+          </div>
+        </div>
+        <!-- /hero-text -->
+
+        <div class="servicos wow fadeIn" data-wow-delay="1s">
+          <div class="servicos-grid">
+            <div class="carro servicos-grid-item">
+              <a href="#" class="active">
+                  <img src="assets/img/icon-carro.png" alt="foto">
+                  <p>Rastreador para <span>carro</span>
+                  </p>
+              </a>
+            </div>
+            <div class="motos servicos-grid-item">
+              <a href="#">
+                <img src="assets/img/icon-moto.png" alt="foto">
+                <p>Rastreador para <span>motos</span>
+                </p>
+              </a>
+            </div>
+            <div class="meus-veiculos servicos-grid-item">
+              <a href="#">
+                <img src="assets/img/icon-veiculos.png" alt="foto">
+                <p>Rastreador para <span>meus veículos</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /servicos -->
+
+        <div class="fale-conosco-btn wow fadeInRight" data-wow-delay="1s">
+          <img src="assets/img/mail.png" alt="">
+        </div>
+      </div>
+      <!-- /hero-inner -->
+    </section>
+    <!-- /Hero -->
+
+    <section class="faq container">
+      <div class="perguntas">
+        <div class="perguntas-grid wow fadeIn">
+          <div class="perguntas-grid-item">
+            <a href="#" class="active">O que é a Rastreio Brasil?</a>
+          </div>
+          <div class="perguntas-grid-item">
+            <a href="#">Para quem é?</a>
+          </div>
+          <div class="perguntas-grid-item">
+            <a href="#">Porque utilizar?</a>
+          </div>
+        </div>
+      </div>
+      <!-- /perguntas -->
+
+      <div class="respostas row  wow fadeIn">
+        <div class="col-lg-6 col-xs-12 my-auto h-100">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque tellus dolor, a dignissim quam elementum at. Ut varius facilisis dignissim. Praesent porttitor varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque tellus dolor, a dignissim quam elementum at. Ut varius facilisis</p>
+          <p>Dignissim. Praesent porttitor varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque tellus dolor, a dignissim quam elementum at. Ut varius facilisi dignissim.
+            Praesent porttitor varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="col-lg-6 col-xs-12 my-auto h-100">
+          <img src="assets/img/resposta-moto.png" alt="foto">
+        </div>
+      </div>
+      <!-- /respostas -->
+    </section>
+    <!-- /faq -->
+
+    <section class="como-funciona container-fluid wow">
+      <div class="como-funciona-header row text-center wow fadeIn">
+        <div class="col">
+          <h2>Como funciona a Rastreio Brasil </h2>
+          <h3>Simples do jeito que você precisa</h3>
+          <img src="assets/img/vertical-arrow.png" alt="arrow">
+        </div>
+      </div>
+
+      <div class="row  align-items-center">
+        <div class="col-lg-6 col-xs-12 como-funciona-foto text-left wow fadeInLeft">
+          <img src="assets/img/como-funciona-volante.png" alt="foto">
+        </div>
+        <div class="col-lg-6 col-xs-12 como-funciona-texto">
+          <h3>01</h3>
+          <h4>Assunto</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices posuere cubilia Curae; Proin condimentum malesuada dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel
+            dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin condimentum malesuada dapibus.
+          </p>
+          <a href="#">saiba mais
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-xs-12 como-funciona-texto">
+          <h3>02</h3>
+          <h4>Assunto</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices posuere cubilia Curae; Proin condimentum malesuada dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel
+            dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin condimentum malesuada dapibus.
+          </p>
+          <a href="#">saiba mais
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-lg-6 col-xs-12 como-funciona-foto text-right wow fadeInRight">
+          <img src="assets/img/como-funciona-moto.png" alt="foto">
+        </div>
+      </div>
+      <div class="row  align-items-center">
+        <div class="col-lg-6 col-xs-12 como-funciona-foto text-left wow fadeInLeft">
+          <img src="assets/img/como-funciona-estrada.png" alt="foto">
+        </div>
+        <div class="col-lg-6 col-xs-12 como-funciona-texto">
+          <h3>03</h3>
+          <h4>Assunto</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices posuere cubilia Curae; Proin condimentum malesuada dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel
+            dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin condimentum malesuada dapibus.
+          </p>
+          <a href="#">saiba mais
+              <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <!-- /como-funciona -->
+
+    <!-- Lista de Planos -->
+    <section class="planos container-fluid">
+      <div class="planos-titulo row text-center">
+        <div class="col">
+          <h2>Escolha seu plano</h2>
+        </div>
+      </div>
+
+      <div class="planos-lista row text-center wow fadeInUp">
+        <div class="col planos-lista-item">
+          <img src="assets/img/icon-carro-verde.png" alt="foto">
+          <h4>Carro</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque tellus dolor</p>
+          <div class="row planos-lista-item-preco">
+            <div class="col">
+              <div class="planos-lista-item-preco-texto">
+                A Partir de
+              </div>
+              <div class="planos-lista-item-preco-valor">
+                59
+              </div>
+              <div class="planos-lista-item-preco-condicao">
+                / Mês
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primario">Saiba mais</a>
+        </div>
+
+        <div class="col planos-lista-item">
+          <img src="assets/img/icon-moto-verde.png" alt="foto">
+          <h4>Motos</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque tellus dolor</p>
+          <div class="row planos-lista-item-preco">
+            <div class="col">
+              <div class="planos-lista-item-preco-texto">
+                A Partir de
+              </div>
+              <div class="planos-lista-item-preco-valor">
+                59
+              </div>
+              <div class="planos-lista-item-preco-condicao">
+                / Mês
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primario">Saiba mais</a>
+        </div>
+
+        <div class="col planos-lista-item">
+          <img src="assets/img/icon-veiculos-verde.png" alt="foto">
+          <h4>Veículos</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque tellus dolor</p>
+          <div class="row planos-lista-item-preco">
+            <div class="col">
+              <div class="planos-lista-item-preco-texto">
+                A Partir de
+              </div>
+              <div class="planos-lista-item-preco-valor">
+                59
+              </div>
+              <div class="planos-lista-item-preco-condicao">
+                / Mês
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primario">Saiba mais</a>
+        </div>
+      </div>
+      <div class="navigator">
+        <a href="#"><img src="assets/img/arrow-left.png" alt="foto"></a>
+        <a href="#"><img src="assets/img/arrow-right.png" alt="foto"></a>
+      </div>
+    </section>
+    <!-- /Lista de Planos -->
+
+    <!-- Rastreios de Sucesso -->
+    <section class="rastreios">
+      <div class="container-fluid">
+        <div class="rastreios-bg">
+        </div>
+        <div class="row">
+          <div class="col-xl-4 rastreios-de-sucesso">
+            <h2>Rastreios de Sucesso</h2>
+            <a href="#"><img src="assets/img/arrow-left.png" alt="foto"></a>
+            <a href="#"><img src="assets/img/arrow-right.png" alt="foto"></a>
+          </div>
+          <!-- rastreios-lista -->
+          <div class="rastreios-lista col-xl-8 owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-footer-photo">
+                    <img src="assets/img/rastreio-avatar.png" alt="avatar" class="rastreio-avatar-photo">
+                  </div>
+                  <div class="card-footer-text">
+                    <p class="card-footer-name">Luís Gomes Pereira</p>
+                    <p class="card-footer-desc">Head - Eletronic Master Publish </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-footer-photo">
+                    <img src="assets/img/rastreio-avatar.png" alt="avatar" class="rastreio-avatar-photo">
+                  </div>
+                  <div class="card-footer-text">
+                    <p class="card-footer-name">João Gomes Pereira</p>
+                    <p class="card-footer-desc">Head - Eletronic Master Publish </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-footer-photo">
+                    <img src="assets/img/rastreio-avatar.png" alt="avatar" class="rastreio-avatar-photo">
+                  </div>
+                  <div class="card-footer-text">
+                    <p class="card-footer-name">Francisco Gomes Pereira</p>
+                    <p class="card-footer-desc">Head - Eletronic Master Publish </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus velit at porta molestie. Quisque sem ex, sodales in dictum sed, vehicula convallis sem. Donec vel dictum enim. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-footer-photo">
+                    <img src="assets/img/rastreio-avatar.png" alt="avatar" class="rastreio-avatar-photo">
+                  </div>
+                  <div class="card-footer-text">
+                    <p class="card-footer-name">Maria Gomes Pereira</p>
+                    <p class="card-footer-desc">Head - Eletronic Master Publish </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /rastreios-lista -->
+        </div>
+      </div>
+    </section>
+    <!-- /Rastreios de Sucesso -->
+
+    <!-- Venha para -->
+    <section class="venha-para text-center">
+      <div class="container wow fadeIn" data-wow-delay="0.5s">
+        <div class="row venha-para-texto">
+          <div class="col">
+            <h4>Não perca tempo</h4>
+            <h3>Venha para a Rastreio Brasil</h3>
+          </div>
+        </div>
+        <div class="row cards">
+          <div class="col-xl-4 wow fadeIn" data-wow-delay="0.4s">
+            <div class="inner">
+              <a href="#">
+                <img src="assets/img/icon-carro.png" alt="foto">
+                <p>Rastrador para <span>carros</span></p>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-4 wow fadeIn" data-wow-delay="0.6s">
+            <div class="inner">
+              <a href="#">
+                <img src="assets/img/icon-moto.png" alt="foto">
+                <p>Rastrador para <span>motos</span></p>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-4 wow fadeIn" data-wow-delay="0.8s">
+            <div class="inner">
+              <a href="#">
+                <img src="assets/img/icon-veiculos.png" alt="foto">
+                <p>Rastrador para <span>meus veículos</span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Venha para -->
+  </main>
+  <!-- /main -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 cell">
+          <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo"></a>
+          <div class="social-icons">
+            <a href="#"><img src="assets/img/social-facebook.png" alt="facebook" class="social"></a>
+            <a href="#"><img src="assets/img/social-twitter.png" alt="twitter" class="social"></a>
+            <a href="#"><img src="assets/img/social-google.png" alt="google plus" class="social"></a>
+          </div>
+          <div class="phone">
+            <a href="index.html"><img src="assets/img/social-phone.png" alt="phone">0800 456 7000</a>
+          </div>
+        </div>
+        <div class="col-xl-3 cell">
+          <div class="footer-menu">
+            <h6>Rastreio Brasil</h6>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Planos</a></li>
+              <li><a href="#">Como funciona</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 cell">
+          <div class="apps">
+            <h6>Baixe nosso aplicativo</h6>
+            <a href="#"><img src="assets/img/app-store.png" alt="app"></a>
+            <a href="#"><img src="assets/img/google-play.png" alt="app"></a>
+          </div>
+        </div>
+        <div class="col-xl-3 cell">
+          <div class="chat">
+            <h6>Chat Online</h6>
+            <a href="#"><img src="assets/img/fale-conosco.png" alt="chat"></a>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row">
+        <div class="col-xl-6 cell">
+          <p>© 2018 Youse – Todos os direitos reservados Política de Privacidade</p>
+        </div>
+        <div class="col-xl-6 cell bandeiras">
+          <img src="assets/img/bandeiras.png" alt="bandeiras">
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </footer>
+  <!-- /footer -->
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script async src="vendor/js/owlcarousel/owl.carousel.min.js"></script>
+  <script async src="vendor/js/wow.min.js"></script>
+  <script async src="assets/js/main.js"></script>
+</body>
+
+</html>

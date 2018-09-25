@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <noscript>
+        <div class="alert alert-danger" role="alert">
+            You need to enable JavaScript to run this app.
+        </div>
+    </noscript>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110615190-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'XX===== YOUR CODE HERE ======XX');
+    </script>
+    -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- INFO -->
+  <title>Rastreio Brasil - Plano > Carro > Pagamento</title>
+  <meta name="description" content="O ratreador que todo veículo deveria ter" />
+  <meta name="keywords" content="rastreador brasil, reastrador veicular, rastreador" />
+
+  <!-- Recommended favicon format -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Apple Touch Icon (at least 200x200px) -->
+  <link rel="apple-touch-icon" href="tile.png">
+
+  <!-- To run web application in full-screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-config" content="browserconfig.xml" />
+
+  <!-- SOCIAL -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://rastreiobrasil.com.br">
+  <meta property="og:title" content="Rastreio Brasil">
+  <meta property="og:image" content="tile-wide.png">
+  <meta property="og:description" content="O ratreador que todo veículo deveria ter">
+  <meta property="og:site_name" content="Rastreio Brasil">
+  <meta property="og:locale" content="en_US">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/css/animate.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body class="wow fadeIn planos-carro planos-carro-pagamento">
+  <header class="header fixed-top">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+      </div>
+
+      <div class="phone d-none d-sm-block">
+        <a href="tel:08004567000">0800 456 7000</a>
+      </div>
+
+      <div class="search d-none d-sm-block">
+        <a href="javascript:void(0)" onclick="searchOpen()"><img src="assets/img/search.png" alt=""></a>
+      </div>
+
+      <!-- menu -->
+      <div class="hamburger">
+        <a href="javascript:void(0)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- /menu -->
+    </div>
+  </header>
+  <!-- /Header -->
+
+  <!-- dropdown menu -->
+  <section class="dropdown-section d-none wow fadeIn">
+    <div class="container">
+      <div class="dropdown">
+        <div class="dropdown-title">
+          <a href="javascript:void(0)">Quero um rastreador para <i class="fa fa-angle-down"></i></a>
+        </div>
+        <ul class="d-none">
+          <li><a href="#"><img src="assets/img/icon-carro.png" alt="">Carro</a></li>
+          <li><a href="#"><img src="assets/img/icon-moto.png" alt="">Moto</a></li>
+          <li><a href="#"><img src="assets/img/icon-veiculos.png" alt="">Veículos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- dropdown menu -->
+
+  <main>
+
+    <!-- busca -->
+    <div id="busca" class="busca modal-full modal-full-hide">
+      <div class="busca modal-full-close">
+        <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="modal-full-body">
+        <form action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="O que você procura?" class="search-text">
+          <input type="image" src="assets/img/search.png" alt="Submit" class="search-btn">
+        </form>
+      </div>
+    </div>
+    <!-- /busca -->
+
+    <!-- fale conosco -->
+    <div id="fale-conosco" class="fale-conosco modal-full modal-full-hide">
+      <div class="fale-conosco modal-full-close">
+        <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="modal-full-body">
+        <h2>Como podemos ajudá-lo?</h2>
+        <p>Deixa uma mensagem com suas dúvidas</p>
+        <form class="fale-conosco-form" action="index.html" method="post">
+          <input type="nome" name="" value="" placeholder="Nome">
+          <input type="email" name="" value="" placeholder="E-mail">
+          <select class="assunto" name="">
+            <option value="valor"> Clique para escolher um assunto </option>
+            <option value="valor"> Carros</option>
+            <option value="valor"> Motos</option>
+            <option value="valor"> Veículos</option>
+          </select>
+          <textarea name="name" placeholder="Texto"></textarea>
+          <button type="button" name="button" class="btn-primario">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <!-- /fale conosco -->
+
+    <!-- menu -->
+    <div class="menu--overlay modal-full modal-full-hide">
+      <div class="modal-full-close">
+        <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="modal-full-body">
+        <div class="card-grid">
+          <div class="card-grid-item">
+            <a href="#">
+              <img src="assets/img/icon-carro.png" alt="foto">
+              <p>Rastrador para <span>carros</span></p>
+            </a>
+          </div>
+          <div class="card-grid-item">
+            <a href="#">
+              <img src="assets/img/icon-moto.png" alt="foto">
+              <p>Rastrador para <span>motos</span></p>
+            </a>
+          </div>
+          <div class="card-grid-item">
+            <a href="#">
+              <img src="assets/img/icon-veiculos.png" alt="foto">
+              <p>Rastrador para <span>meus veículos</span></p>
+            </a>
+          </div>
+        </div>
+
+        <!-- submenu -->
+        <div class="menu--overlay-submenu row">
+          <div class="col">
+            <a href="#">Sobre nós</a>
+            <a href="#">Planos</a>
+            <a href="#">Como funciona</a>
+            <a href="#">Blog</a>
+            <a href="#" class="btn btn-primario">Login</a>
+          </div>
+        </div>
+        <!-- /submenu -->
+        <div class="menu--overlay-social row">
+          <div class="col">
+            <a href="#"><img src="assets/img/social-facebook.png" alt="facebook" class="social"></a>
+            <a href="#"><img src="assets/img/social-twitter.png" alt="twitter" class="social"></a>
+            <a href="#"><img src="assets/img/social-google.png" alt="google plus" class="social"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- /menu -->
+
+
+    <section class="hero container-fluid">
+      <div class="hero-inner container">
+        <div class="hero-text row align-items-center">
+          <div class="chamada wow fadeIn" data-wow-delay="0.8s">Cadastro para compra</div>
+        </div>
+        <!-- /hero-text -->
+
+      </div>
+      <!-- /hero-inner -->
+    </section>
+    <!-- /Hero -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3 pagamento-planos-col">
+          <div class="pagamento-planos">
+            <h6>Ótima ecolha!</h6>
+            <h3>Plano 1</h3>
+            <p class="pagamento-planos-precos"><span class="pagamento-planos-cifrao">R$</span> 1.595,00 <span class="pagamento-planos-condicao">/mês</span></p>
+          </div>
+          <div class="pagamento-planos-adicione">
+            <h6>Adicione seu plano</h6>
+          </div>
+          <div class="pagamento-planos-adicione-item pagamento-planos-adicione-assistencia">
+            <img src="assets/img/planos-pagamento-carro-icone-assistencia.png" alt="">
+            <h3>Assistência Carro</h3>
+            <p class="pagamento-planos-adicione-preco">R$ 9,99</p>
+            <p class="pagamento-planos-adicione-adicionar"> <a href="#">+ Adicionar</a></p>
+          </div>
+
+          <div class="pagamento-planos-adicione-item pagamento-planos-adicione-assistencia">
+            <img src="assets/img/planos-pagamento-carro-icone-seguro.png" alt="">
+            <h3>Seguro</h3>
+            <p class="pagamento-planos-adicione-preco">R$ 9,99</p>
+            <p class="pagamento-planos-adicione-adicionar"> <a href="#">+ Adicionar</a></p>
+          </div>
+        </div>
+
+        <div class="col pagamento-planos-col-formulario">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="planos.html">Rastreador para Carro</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Plano 1</li>
+            </ol>
+          </nav>
+
+          <div class="pagamento-planos-formulario">
+            <form class="" action="planos-carro-pagamento.html" method="post">
+
+              <div class="pagamento-planos-formulario-grupo">
+                <h2>Insira os dados dos seus veículos</h2>
+                <div class="row">
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Placa <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Cor <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Combustível <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Chassi <br>
+                    <input type="text" name="" value="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagamento-planos-formulario-grupo">
+                <h2>Agora precisamos dos seus dados pessoais</h2>
+                <div class="row">
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Nascimento <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    CPF <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    RG <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Sexo <br>
+                    <select>
+                      <option value="">Escolha</option>
+                      <option value="">Masculino</option>
+                      <option value="">Feminino</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Estado Civil <br>
+                    <select>
+                      <option value="">Escolha</option>
+                      <option value="">Solteiro</option>
+                      <option value="">Casado</option>
+                    </select>
+                  </div>
+                  <div class="col-2 pagamento-planos-formulario-item">
+                    CEP <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-4 pagamento-planos-formulario-item input-100">
+                    Endereço <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Número <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Complemento <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Bairro <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Cidade <br>
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-3 pagamento-planos-formulario-item">
+                    Estado <br>
+                    <input type="text" name="" value="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagamento-planos-formulario-grupo pagamento-forma-de-pagamento">
+                <h2>Escolha a sua forma de pagamento</h2>
+                <div class="row">
+                  <div class="col-4 pagamento-planos-formulario-item">
+                    <a href="#" class="btn btn-primario"><img src="assets/img/pagamento-formulario-cartao.png" alt=""> Cartão de Crédito</a>
+                  </div>
+                  <div class="col-4 pagamento-planos-formulario-item">
+                    <a href="#" class="btn btn-secundario"><img src="assets/img/pagamento-formulario-boleto.png" alt=""> Boleto</a>
+                  </div>
+                </div>
+
+                <div class="pagamento-planos-formulario-mais-cartoes">
+                  <div class="row">
+                    <div class="col-3 pagamento-planos-formulario-mais-cartoes-abas">
+                      <a href="#" class="btn btn-aba">Um Cartão</a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#" class="btn btn-aba disable">Dois Cartões</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 pagamento-planos-formulario-item input-50">
+                      Digite os numeros do seu cartão <br>
+                      <input type="text" name="" value="">
+                    </div>
+                    <div class="col-12 pagamento-planos-formulario-item input-50">
+                      Digite o nome impresso no cartão <br>
+                      <input type="text" name="" value="">
+                    </div>
+                    <div class="col-12 pagamento-planos-formulario-item">
+                      <strong>Data de validade </strong><br>
+                    </div>
+                    <div class="col-2 pagamento-planos-formulario-item">
+                      Mês <br>
+                      <select>
+                      <option value="">Escolha</option>
+                      <option value="">Janeiro</option>
+                      <option value="">Fevereiro</option>
+                    </select>
+                    </div>
+                    <div class="col-2 pagamento-planos-formulario-item">
+                      Ano<br>
+                      <select>
+                      <option value="">Escolha</option>
+                      <option value="">2018</option>
+                      <option value="">2019</option>
+                    </select>
+                    </div>
+                    <div class="col-2 pagamento-planos-formulario-item">
+                      CCV <br>
+                      <input type="text" name="" value="">
+                    </div>
+                    <div class="col-12 pagamento-planos-formulario-item input-50">
+                      Escolha a opção de pagamento <br>
+                      <input type="text" name="" value="">
+                    </div>
+                  </div>
+                </div>
+                <!-- /mais cartoes -->
+                <div class="row">
+                  <div class="col-4 pagamento-planos-formulario-item">
+                    <a href="#" class="btn btn-primario">Finalizar compra</a>
+                  </div>
+                  <div class="col-4 pagamento-planos-formulario-item">
+                    <a href="#" class="btn btn-ternario">Alterar dados do veículo</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <!-- /main -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 cell">
+          <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo"></a>
+          <div class="social-icons">
+            <a href="#"><img src="assets/img/social-facebook.png" alt="facebook" class="social"></a>
+            <a href="#"><img src="assets/img/social-twitter.png" alt="twitter" class="social"></a>
+            <a href="#"><img src="assets/img/social-google.png" alt="google plus" class="social"></a>
+          </div>
+          <div class="phone">
+            <a href="index.html"><img src="assets/img/social-phone.png" alt="phone">0800 456 7000</a>
+          </div>
+        </div>
+        <div class="col-xl-3 cell">
+          <div class="footer-menu">
+            <h6>Rastreio Brasil</h6>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Planos</a></li>
+              <li><a href="#">Como funciona</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 cell">
+          <div class="apps">
+            <h6>Baixe nosso aplicativo</h6>
+            <a href="#"><img src="assets/img/app-store.png" alt="app"></a>
+            <a href="#"><img src="assets/img/google-play.png" alt="app"></a>
+          </div>
+        </div>
+        <div class="col-xl-3 cell">
+          <div class="chat">
+            <h6>Chat Online</h6>
+            <a href="#"><img src="assets/img/fale-conosco.png" alt="chat"></a>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row">
+        <div class="col-xl-6 cell">
+          <p>© 2018 Youse – Todos os direitos reservados Política de Privacidade</p>
+        </div>
+        <div class="col-xl-6 cell bandeiras">
+          <img src="assets/img/bandeiras.png" alt="bandeiras">
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </footer>
+  <!-- /footer -->
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script async src="vendor/js/wow.min.js"></script>
+  <script async src="assets/js/main.js"></script>
+</body>
+
+</html>
