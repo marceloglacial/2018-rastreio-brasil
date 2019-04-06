@@ -11,8 +11,7 @@
 
 ## Live Demo
 
-https://glacial.gitlab.io/2018-rastreio-brasil
-
+https://marceloglacial.github.io/2018-rastreio-brasil/front-end/
 
 ## Screenshot 
 
